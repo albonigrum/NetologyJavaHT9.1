@@ -12,4 +12,8 @@ public class Post {
     private Like[] likes;
     private Repost[] reposts;
     private long countViews;
+    private String copyright;
+    private GeoTag geoTag;
+    private boolean isPinned;
+    private boolean markedAsAds;
 }
