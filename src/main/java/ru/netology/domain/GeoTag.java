@@ -1,6 +1,7 @@
 package ru.netology.domain;
 
 public class GeoTag {
-    String type;
-    String coordinates;
+    private String type;
+    private String coordinates;
+    private Place place;
 }

@@ -4,16 +4,28 @@ import java.util.Date;
 
 public class Post {
     private long id;
-    private User author;
+    private long ownerId;
+    private long fromId;
+    private long createdBy;
     private Date publicationDate;
     private String text;
-    private Attachment[] attachments;
-    private Comment[] comments;
-    private Like[] likes;
-    private Repost[] reposts;
-    private long countViews;
+    private long replyOwnerId;
+    private long replyPostId;
+    private boolean friendsOnly;
+    private CommentsInfo commentsInfo;
     private String copyright;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private long countViews;
+    private String postType;
+    private PostSource postSource;
     private GeoTag geoTag;
+    private long signerId;
+    private boolean canPin;
+    private boolean canDelete;
+    private boolean canEdit;
     private boolean isPinned;
     private boolean markedAsAds;
+    private boolean isFavorite;
+    private long postponedId;
 }
